@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/mobile.css">
 </head>
 <body>
     <header class = "image">
-        <nav class="nv2">
-           <a href="#name" class = "nv1">ABOUT</a>&nbsp;&nbsp;
+        <nav id = "nv2">
+            <a href="#name" class = "nv1">ABOUT</a>&nbsp;&nbsp;
+            <a href="#Projects" class = "nv1">PROJECTS</a>&nbsp;&nbsp;
            <a href="#Skills" class = "nv1">SKILLS</a>&nbsp;&nbsp;
-           <a href="#About_1" class = "nv1">HOBBIES</a>&nbsp;&nbsp;
-            <a href="#contacts" class = "nv1">CONTACT ME</a>&nbsp;&nbsp;
+           <a href="#Hobbies" class = "nv1">HOBBIES</a>&nbsp;&nbsp;
+           <a href="#contact" class = "nv1">CONTACT ME</a>
+            <i class="fas fa-bars fa-2x" id="menubar" ></i>
+            <label id="sidenav">
+                    <ul class="snv1">
+                    <li><a href="#name" class = "snv1">ABOUT</a>&nbsp;&nbsp;</li>
+                    <li><a href="#Projects" class = "snv1">PROJECTS</a>&nbsp;&nbsp;</li>
+                    <li><a href="#Skills" class = "snv1">SKILLS</a>&nbsp;&nbsp;</li>
+                    <li><a href="#Hobbies" class = "snv1">HOBBIES</a>&nbsp;&nbsp;</li>
+                    <li><a href="#contact" class = "snv1">CONTACT ME</a>&nbsp;&nbsp;</li>
+                    </ul>
+        </label>
         </nav>
         <div class="image">
         <br><br>
@@ -38,19 +52,19 @@
                     Skills :</p>
             </div>
             <hr class="line">
-            <section class = "skills"></div>
-            <fieldset class = "about_1" >
+            <section class = "skills">
+            <fieldset class = "description" >
                 <section class = "Heading">
                     Programming languages :
                 </section>
                 <hr>
-                <img src="../Photos/HTML5.png" width="72" class="link2">
-                <img src="../Photos/CSS.png" width="72" class="link2">
-                <img src="../Photos/Java.png" width="72" class="link2">
-                <img src="../Photos/Python.jpeg" width="72" class="link2">
-                <img src="../Photos/C++.jpeg" width="72" class="link2">
+                <img src="../Photos/HTML5.png"  class="skillsImages">
+                <img src="../Photos/CSS.png"  class="skillsImages">
+                <img src="../Photos/Java.png"  class="skillsImages">
+                <img src="../Photos/Python.jpeg"  class="skillsImages">
+                <img src="../Photos/C++.jpeg"  class="skillsImages">
                 <br><br>
-                <img src="../Photos/Codeforces.png" width="250">
+                <img src="../Photos/Codeforces.png" class="skillsImages_1">
                 <hr>
                 <p id="rating"></p>
                 <p id="submissions"></p>
@@ -58,66 +72,38 @@
             </section>
         <br><br>    
     <div>
-    <p id = "About_1" >My,<br>
+    <p id = "Hobbies" >My,<br>
             Hobbies :</p>
     </div>
     <hr class="line">
     <section class = "hobbies"></div>
-    <fieldset class = "about_1" >
+    <fieldset class = "description" >
         I like listening to music as they help me relax. I also watch a 
         lot of movies for entertaintment. Among outdoor activities I like playing
         badminton. I also love playing video games during my free time.
     </fieldset>
     </section>
     <footer class="foot">
-        <p id = "contacts">
-          Contact me : 
+        <p id = "contact">
+          Get in touch : 
             <br>
         </p>
             <img src="" alt="" id = "link1">
-            <a href="https://www.linkedin.com/in/rituraj-seal-48a8031bb" class = "link2" target="_blank">
+            <a href="https://www.linkedin.com/in/rituraj-seal-48a8031bb" class = "contacts" target="_blank">
             <img src="../Photos/linkdin.png" width="40">
             </a>
-            <a href="@RiturajSeal" class = "link2" target="_blank">
+            <a href="@RiturajSeal" class = "contacts" target="_blank">
                 <img src="../Photos/twitter.png" width="40">
             </a>
-            <a href="https://github.com/Riturajseal2001" class = "link2" target="_blank">
+            <a href="https://github.com/Riturajseal2001" class = "contacts" target="_blank">
                 <img src="../Photos/GitHub.jpeg" width="40">
             </a>
-            <a href="mailto:rituraj2001.rs@gmail.com" class = "link2" target="_blank">
+            <a href="mailto:rituraj2001.rs@gmail.com" class = "contacts" target="_blank">
                 <img src="../Photos/mail.png" width="40">
             </a>
+            <br>
+            <p id="footerText">2021©RiturajSeal</p>
     </footer>
-    <script>
-        
-        const url1 = 'https://codeforces.com/api/user.info?handles=Rituraj.rs';
-        const url2 = 'https://codeforces.com/api/user.status?handle=Rituraj.rs&from=1&count=1000'
-        async function getRating(){
-            const response = await fetch(url1);
-            const data = await response.json();
-            if(data.status === "OK" ){
-                console.log(data);
-                document.getElementById('rating').innerHTML = "Current rating : " + data.result[0].rating + "<br /> Current rank : " + data.result[0].rank;
-            }
-        }
-        async function getSubmission(){
-            const response = await fetch(url2);
-            const data = await response.json();
-            if(data.status === "OK" ){
-                console.log(data);
-                var c = 0;
-                console.log(data);
-                for( i = 0 ; i < data.result.length ; i++ ){
-                    if( data.result[i].verdict === "OK" )
-                    {
-                        c = c+1;
-                    }
-                }
-                    document.getElementById('submissions').innerHTML =  "Number of questions solved : "+c+"<br />Total number of submissions : "+data.result.length;
-            }
-        }
-        getRating();
-        getSubmission();
-    </script>
+    <script src="../JS/app.js"></script>
 </body>
 </html>
