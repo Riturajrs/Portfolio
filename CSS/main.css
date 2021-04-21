@@ -1,4 +1,9 @@
+/*CSS file for personal computer screen size*/
+
 @media (min-width: 801px){
+
+
+/* Top header file background image */
 .image{
     background-image: url("../Photos/img2.jpg");
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -10,10 +15,29 @@
     overflow-x: hidden;
     border-image: 10px;
 }
+
+
+/* Resizing top name"Hi,I am Rituraj "*/
+#name{
+    margin-top: 8%;
+    margin-left: 20%;
+    font-size: 300%;
+    display: flex;
+    font-weight: bold;
+    text-align:justify;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/*Profile photo(Plan dropped for now)*/
+/*
 #profile{
     border-radius: 25px;
     margin-left: 6.67%;
-}
+}*/
+
+
+/*Hobbies section background image*/
 .hobbies{
     padding: 6.67%;
     background-image: url("../Photos/hobbies.jpeg");
@@ -24,6 +48,9 @@
     overflow-x: hidden;
     margin-top: 6.67%;
 }
+
+
+/* Navigation bar */
 #nv2{
     background-color: rgb(126, 2, 2);
     padding: 0.8%;
@@ -33,6 +60,9 @@
     display: flex;
     position: fixed;
 }
+
+
+/* Animating navigation and social media links */
 a:hover{
     color: honeydew;
     background-color: rgb(238, 152, 23);
@@ -40,20 +70,23 @@ a:hover{
     transition-duration: 0.5s;
     transition-timing-function:ease-in-out;
 }
+
+
+/* Menubar drop down icon for smaller screens */
 #menubar{
     display: none;
-} 
+}
+
+
+/* Drop down menu for smaller screens */
 #sidenav{
     display: none;
 }
-nav #icon{
-    color: wheat;
-    font-size: medium;
-    cursor: pointer;
-    margin-left: -7.5%;
-    display: none;
-}
+
+
+/* Navigation bar links beautification for larger screens */
 .nv1{
+    transition: 0.5s;
     transition-timing-function: ease-in;
     padding: 0.67%;
     margin-right: 2%;
@@ -63,44 +96,56 @@ nav #icon{
     text-decoration: none;
     font-size: large;
 }
+
+
+/* Adding background colour to footer section */
 .foot{
     background-color: lightgray;
     padding: 1.33%;
     margin-top: 10%;
     flex-wrap: nowrap;
 }
-#link1{
+
+
+/*Pseudo link for aligning social media links during screen resize */
+#pseudoLink{
     margin-left: 0.67%;
     padding: 0px;
     text-decoration: none;
 }
-.skillsImages{
-    padding: 0px;
-    text-decoration: none;
-    margin-left: 2.67%;
-    width: 72px;
-}
-.skillsImages_1{
-    width: 50%;
-}
+
+
+/* Beautifying social media links */
 .contacts{
     padding: 0px;
     text-decoration: none;
     margin-left: 2.67%;
 }
+
+
+/* Resizing social media account links */
 .contacts>img{
     width: 3%;
 }
+
+
+/* Setting size of heading for skills and hobbies */
 #Hobbies,#Skills{
     font-size: 220%;
     font-weight: bold;
     text-align:justify;
     margin-left: 1%;
 }
+
+
+/* Giving colour to horizontal line */
 .line{
     background-color: lightslategrey;
     color: lightslategrey;
 }
+
+
+/* Seeting size of paragraphs for skills and hobbies */
 .description{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
@@ -115,20 +160,17 @@ nav #icon{
     font : bold;
     border-color: rgb(221, 189, 44);
 }
-#name{
-    margin-top: 8%;
-    margin-left: 20%;
-    font-size: 300%;
-    display: flex;
-    font-weight: bold;
-    text-align:justify;
-    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
+
+/*Heading for About Me*/
 .About{
     font-size: 220%;
     font-weight: bold;
     text-align:center;   
 }
+
+
+/* Body for "About me" */
 .about{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
@@ -145,12 +187,18 @@ nav #icon{
     font : bold;
     border-color: rgb(221, 189, 44);
 }
-#contact{
+
+
+/* Resizing "Get in touch" text */
+.contact{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font : bold;
     font-size: 150%;
     margin-left: 3.33%;
 }
+
+
+/* Wraps up the description of the skills section */
 .skills{
     padding: 6.67%;
     background-image: url("../Photos/skills.jpg");
@@ -161,9 +209,30 @@ nav #icon{
     overflow-x: hidden;
     margin-top: 6.67%;
 }
+
+
+/* Images of programming languages I know */
+.skillsImages{
+    padding: 0px;
+    text-decoration: none;
+    margin-left: 2.67%;
+    width: 72px;
+}
+
+
+/* Resizing Codeforces logo */
+.skillsImages_1{
+    width: 50%;
+}
+
+
+/*Heading for "Programming languages: "*/
 .Heading{
     font-size: 120%;   
 }
+
+
+/* Setting size for end credits of the page*/
 #footerText{
     text-align: center;
     font-size: 50%;

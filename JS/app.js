@@ -1,3 +1,5 @@
+
+/** Start of dropdown menu section for smaller screens */
 var menu=document.getElementById("menubar");
 $("#sidenav").css("width","0px");
 $(".snv1").css("padding","0px");
@@ -18,7 +20,10 @@ menu.onclick=function(){
 		$("#sidenav").css("width","0px");
 	}
 }
+/**End of dropdown menu section for smaller screens */
 
+
+/** Start of Codeforces API call for live statistics */
 const url1 = 'https://codeforces.com/api/user.info?handles=Rituraj.rs';
 const url2 = 'https://codeforces.com/api/user.status?handle=Rituraj.rs&from=1&count=1000'
 async function getRating(){
@@ -44,32 +49,25 @@ async function getSubmission(){
 }
 getRating();
 getSubmission();
-// Define selector for selecting
-        // anchor links with the hash
+/** End of Codeforces API call for live statistics */
+
+
+/** Start of animation for smoother scroll */
         let anchorSelector = 'a[href^="#"]';
       
         $(anchorSelector).on('click', function (e) {
           
-            // Prevent scrolling if the
-            // hash value is blank
             e.preventDefault();
       
-            // Get the destination to scroll to
-            // using the hash property
             let destination = $(this.hash);
       
-            // Get the postion of the destination
-            // using the coordinates returned by
-            // offset() method
             let scrollPosition
                 = destination.offset().top;
       
-            // Specify animation duration
             let animationDuration = 500;
-      
-            // Animate the html/body with 
-            // the scrollTop() method
+
             $('html, body').animate({
                 scrollTop: scrollPosition
             }, animationDuration);
         });
+/** End of animation for smoother scroll */

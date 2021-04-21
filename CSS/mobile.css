@@ -1,6 +1,8 @@
+/*CSS file for mobile and tablet screen size*/
 @media (max-width: 800px){
-    
 
+
+/* Top header file background image */
 .image{
     background-image: url("../Photos/img2.jpg");
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -12,6 +14,9 @@
     overflow-x: hidden;
     border-image: 10px;
 }
+
+
+/* Resizing top name"Hi,I am Rituraj "*/
 #name{
     margin-top: 8%;
     margin-left: 20%;
@@ -21,11 +26,17 @@
     text-align:justify;
     font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+/*Profile photo(Plan dropped for now)*/
 /*
 #profile{
     border-radius: 25px;
     margin-left: 6.67%;
 }*/
+
+
+/*Hobbies section background image*/
 .hobbies{
     padding: 6.67%;
     background-image: url("../Photos/hobbies.jpeg");
@@ -36,6 +47,9 @@
     overflow-x: hidden;
     margin-top: 6.67%;
 }
+
+
+/* Navigation bar */
 #nv2{
     background-color: darkred;
     width: 100%;
@@ -44,6 +58,9 @@
     padding: 0.8%;
     position: fixed;
 }
+
+
+/* Animating navigation and social media links */
 a:hover{
     color: honeydew;
     background-color: rgb(238, 152, 23);
@@ -51,28 +68,44 @@ a:hover{
     transition-duration: 0.5s;
     transition-timing-function:ease-in-out;
 }
+
+
+/*Adding colour and size to drop down menu icon */
 nav #sidenav{
     color: wheat;
     font-size: small;
     cursor: pointer;
     margin-left: 0px;
 }
+
+
+/* Menubar drop down icon for smaller screens */
 #menubar{
     margin-left: -10px;
     margin-top: 10px;
     color: wheat;
     cursor: pointer;
 }
+
+
+/*List of links in drop down menubar */
 nav li{
     display: block;
     margin: 10px 0;
 }
+
+
+/* Adding background colour to unordered list */
 ul{
     background-color: darkred;
     width: 100%;
     list-style:none ;
 }
+
+/* Adding properties to dropdown menu items */
 .snv1{
+    opacity: 1;
+    transition: all  0.5s;
     text-align: center;
     transition-timing-function: ease-in;
     border-radius: 5px;
@@ -83,49 +116,48 @@ ul{
     padding: 0.67%;
     margin-left: -0.67%;
 }
+
+
+/* Navigation bar links beautification for larger screens */
 .nv1{
     display: none;
 }
+
+
+/* Adding background colour to footer section */
 .foot{
     background-color: lightgray;
     padding: 1.33%;
     margin-top: 10%;
     flex-wrap: nowrap;
 }
-#link1{
+
+
+/*Pseudo link for aligning social media links during screen resize */
+#pseudoLink{
     margin-left: 0.67%;
     padding: 0px;
     text-decoration: none;
 }
-.skillsImages{
-    padding: 0px;
-    text-decoration: none;
-    margin-left: 2.67%;
-    width: 16%;
-}
-.contacts>img{
-    width: 5%;
-}
-#footerText{
-    text-align: center;
-    font-size: 10%;
-}
-.contacts{
-    padding: 0px;
-    text-decoration: none;
-    margin-left: 2.67%;
-}
 
+
+/* Setting size of heading for skills and hobbies */
 #Hobbies,#Skills{
     font-size: 110%;
     font-weight: bold;
     text-align:justify;
     margin-left: 1%;
 }
+
+
+/* Giving colour to horizontal line */
 .line{
     background-color: lightslategrey;
     color: lightslategrey;
 }
+
+
+/* Setting size of paragraphs for hobbies */
 .hobbies>.description{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
@@ -140,6 +172,9 @@ ul{
     font : bold;
     border-color: rgb(221, 189, 44);
 }
+
+
+/* Setting size of paragraphs for skills */
 .description{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
@@ -154,11 +189,17 @@ ul{
     font : bold;
     border-color: rgb(221, 189, 44);
 }
+
+
+/*Heading for About Me*/
 .About{
     font-size: 110%;
     font-weight: bold;
     text-align:center;   
 }
+
+
+/* Body for "About me" */
 .about{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
@@ -175,12 +216,9 @@ ul{
     font : bold;
     border-color: rgb(221, 189, 44);
 }
-#contact{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font : bold;
-    font-size: 75%;
-    margin-left: 3.33%;
-}
+
+
+/* Wraps up the description of the skills section */
 .skills{
     padding: 6.67%;
     background-image: url("../Photos/skills.jpg");
@@ -192,13 +230,61 @@ ul{
     overflow-x: hidden;
     margin-top: 6.67%;
 }
+
+
+/* Images of programming languages I know */
+.skillsImages{
+    padding: 0px;
+    text-decoration: none;
+    margin-left: 2.67%;
+    width: 16%;
+}
+
+
+/* Resizing Codeforces logo */
 .skillsImages_1{
     width: 50%;
 }
+
+
+/* Resizing the rating and submissions in Codeforces account*/
 #rating #submissions{
     font-size: 50%;
 }
+
+
+/*Heading for "Programming languages: "*/
 .Heading{
     font-size: 100%;   
+}
+
+
+/* Resizing "Get in touch" text */
+.contact{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font : bold;
+    font-size: 75%;
+    margin-left: 3.33%;
+}
+
+
+/* Resizing social media account links */
+.contacts>img{
+    width: 5%;
+}
+
+
+/* Beautifying social media links */
+.contacts{
+    padding: 0px;
+    text-decoration: none;
+    margin-left: 2.67%;
+}
+
+
+/* Setting size for end credits of the page*/
+#footerText{
+    text-align: center;
+    font-size: 10%;
 }
 }
