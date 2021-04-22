@@ -22,19 +22,35 @@
     margin-top: 8%;
     margin-left: 20%;
     font-size: 300%;
-    display: flex;
+    display:flex;
     font-weight: bold;
     text-align:justify;
     font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
-/*Profile photo(Plan dropped for now)*/
-/*
+span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+
+span.fade{
+    margin-left: 1%;
+    opacity: 1;
+    transform: translateY(0%);
+}
+/*Profile photo*/
+
 #profile{
+    width: 15%;
+    margin-top: -5%;
+    float: right;
     border-radius: 25px;
-    margin-left: 6.67%;
-}*/
+    margin-right: 5%;
+}
 
 
 /*Hobbies section background image*/
@@ -54,6 +70,7 @@
 #nv2{
     background-color: rgb(126, 2, 2);
     padding: 0.8%;
+    z-index: 1;
     margin-top: -0.8%;
     width: 100%;
     overflow: hidden;
@@ -235,6 +252,6 @@ a:hover{
 /* Setting size for end credits of the page*/
 #footerText{
     text-align: center;
-    font-size: 50%;
+    font-size: 100%;
 }
 }

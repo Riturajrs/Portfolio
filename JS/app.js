@@ -8,7 +8,7 @@ $("#sidenav").css("display","none");
 menu.onclick=function(){
 	if (sidenav.style.width=="0px"){
 		$("#sidenav").css("width","100%");
-        $(".snv1").css("padding","0.8%");
+        $(".snv1").css("padding","1%");
         $(".snv1").css("margin-top","3px");
         $("#sidenav").css("display","block");
         $(".snv1").css("font-size","small");

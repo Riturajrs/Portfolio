@@ -22,18 +22,26 @@
     margin-left: 20%;
     font-size: 150%;
     display: flex;
+    width: 25%;
+    display: inline-block;
     font-weight: bold;
     text-align:justify;
     font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
 
-/*Profile photo(Plan dropped for now)*/
-/*
-#profile{
-    border-radius: 25px;
-    margin-left: 6.67%;
-}*/
+
+span.fade{
+    margin-left: 1%;
+    opacity: 1;
+    transform: translateY(0%);
+}
 
 
 /*Hobbies section background image*/
@@ -57,6 +65,7 @@
     margin-top: -2.5%;
     padding: 0.8%;
     position: fixed;
+    z-index: 1;
 }
 
 
@@ -104,6 +113,7 @@ ul{
 
 /* Adding properties to dropdown menu items */
 .snv1{
+    margin: 5%;
     opacity: 1;
     transition: all  0.5s;
     text-align: center;
@@ -111,9 +121,8 @@ ul{
     border-radius: 5px;
     background-color: darkred;
     color: wheat;
-    font-size: small;
+    font-size: large;
     text-decoration: none;
-    padding: 0.67%;
     margin-left: -0.67%;
 }
 
@@ -258,6 +267,15 @@ ul{
     font-size: 100%;   
 }
 
+
+/* Profile photo */
+#profile{
+    width: 15%;
+    margin-top: -5%;
+    float: right;
+    border-radius: 5px;
+    margin-right: 5%;
+}
 
 /* Resizing "Get in touch" text */
 .contact{
