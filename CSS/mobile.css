@@ -12,7 +12,6 @@
 	clip-path:box;
     padding-bottom: 2%;
     overflow-x: hidden;
-    border-image: 10px;
 }
 
 
@@ -23,7 +22,6 @@
     font-size: 150%;
     display: flex;
     width: 25%;
-    display: inline-block;
     font-weight: bold;
     text-align:justify;
     font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -38,7 +36,7 @@ span{
 
 
 span.fade{
-    margin-left: 1%;
+    margin-left: 2%;
     opacity: 1;
     transform: translateY(0%);
 }
@@ -80,7 +78,9 @@ a:hover{
 
 
 /*Adding colour and size to drop down menu icon */
-nav #sidenav{
+#sidenav{
+    display: block;
+    height: 100%;
     color: wheat;
     font-size: small;
     cursor: pointer;
@@ -97,35 +97,26 @@ nav #sidenav{
 }
 
 
-/*List of links in drop down menubar */
-nav li{
-    display: block;
-    margin: 10px 0;
-}
-
-
 /* Adding background colour to unordered list */
-ul{
-    background-color: darkred;
-    width: 100%;
-    list-style:none ;
+#sidenav{
+    background-color: rgba(139,0,0,0.8);
+    height: 100%;
+    transition: all  0.5s;
+    list-style: none;
+    text-align: center;
+    margin-top: -2%;
+    margin-left: -0.8%;
+    border-radius: 5px;
 }
+
 
 /* Adding properties to dropdown menu items */
-.snv1{
-    margin: 5%;
-    opacity: 1;
-    transition: all  0.5s;
-    text-align: center;
-    transition-timing-function: ease-in;
-    border-radius: 5px;
-    background-color: darkred;
-    color: wheat;
-    font-size: large;
+#sidenav a{
+    margin:2%;
+    padding:1%;
     text-decoration: none;
-    margin-left: -0.67%;
+    color: wheat;
 }
-
 
 /* Navigation bar links beautification for larger screens */
 .nv1{

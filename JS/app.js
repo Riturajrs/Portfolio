@@ -1,23 +1,20 @@
 
 /** Start of dropdown menu section for smaller screens */
 var menu=document.getElementById("menubar");
-$("#sidenav").css("width","0px");
-$(".snv1").css("padding","0px");
-$(".snv1").css("font-size","0px");
-$("#sidenav").css("display","none");
-menu.onclick=function(){
-	if (sidenav.style.width=="0px"){
-		$("#sidenav").css("width","100%");
-        $(".snv1").css("padding","1%");
-        $(".snv1").css("margin-top","3px");
-        $("#sidenav").css("display","block");
-        $(".snv1").css("font-size","small");
+var sideNav = document.getElementById("sidenav");
+menu.style.height = "0%";
+sideNav.style.height = "0%";
+sideNav.style.fontSize = "0%";
+function Nav(){
+	if (menu.style.height === "0%"){
+        menu.style.height = "100%";
+        sideNav.style.height = "100%";
+        sideNav.style.fontSize = "large";
 	}
 	else{
-        $("#sidenav").css("display","none");
-        $(".snv1").css("padding","0px");
-        $(".snv1").css("font-size","0px");
-		$("#sidenav").css("width","0px");
+        sideNav.style.fontSize = "0%";
+        menu.style.height = "0%";
+        sideNav.style.height = "0%";
 	}
 }
 /**End of dropdown menu section for smaller screens */
