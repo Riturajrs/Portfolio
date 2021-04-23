@@ -1,11 +1,14 @@
 /*CSS file for personal computer screen size*/
 
-@media (min-width: 801px){
+@media (min-width: 1025px){
 
-
+body{
+    color:rgb(181, 210, 235);
+    background-color:rgb(12, 8, 48);
+}
 /* Top header file background image */
 .image{
-    background-image: url("../Photos/img2.jpg");
+    background-image: url("../Photos/projects_background.jpg");
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -14,6 +17,7 @@
     padding-bottom: 2%;
     overflow-x: hidden;
     border-image: 10px;
+    padding: 6.67%;
 }
 
 
@@ -21,7 +25,8 @@
 #name{
     margin-top: 8%;
     margin-left: 20%;
-    font-size: 300%;
+    font-size: 3rem;
+    color: rgb(1, 8, 27);
     display:flex;
     font-weight: bold;
     text-align:justify;
@@ -32,7 +37,7 @@
 span{
     opacity: 0;
     transition: all 0.5s ease;
-    transform: translateY(50px);
+    transform: translateY(2rem);
     display: inline-block;
 }
 
@@ -40,7 +45,7 @@ span{
 span.fade{
     margin-left: 1%;
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(0);
 }
 /*Profile photo*/
 
@@ -56,19 +61,20 @@ span.fade{
 /*Hobbies section background image*/
 .hobbies{
     padding: 6.67%;
-    background-image: url("../Photos/hobbies.jpeg");
+    /*background-image: url("../Photos/binaryrain.gif");*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-attachment: fixed;
+    /*background-attachment: fixed;
 	background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%;*/
     overflow-x: hidden;
-    margin-top: 6.67%;
+   /* margin-top: 6.67%;*/
 }
 
 
 /* Navigation bar */
 #nv2{
-    background-color: rgb(126, 2, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0.8%;
     z-index: 1;
     margin-top: -0.8%;
@@ -82,7 +88,7 @@ span.fade{
 /* Animating navigation and social media links */
 a:hover{
     color: honeydew;
-    background-color: rgb(238, 152, 23);
+    background-color: rgb(54, 124, 185);
     border-radius: 5px;
     transition-duration: 0.5s;
     transition-timing-function:ease-in-out;
@@ -106,10 +112,11 @@ a:hover{
     transition: 0.5s;
     transition-timing-function: ease-in;
     padding: 0.67%;
-    margin-right: 2%;
+    float:right;
+    margin-left: 5%;
     border-radius: 5px;
-    background-color: darkred;
-    color: wheat;
+    background-color: rgba(12, 11, 75, 0.1);
+    color:rgb(181, 210, 235);
     text-decoration: none;
     font-size: large;
 }
@@ -117,7 +124,8 @@ a:hover{
 
 /* Adding background colour to footer section */
 .foot{
-    background-color: lightgray;
+    color:white;
+    background-color:rgb(10, 98, 199) ;
     padding: 1.33%;
     margin-top: 10%;
     flex-wrap: nowrap;
@@ -147,13 +155,13 @@ a:hover{
 
 
 /* Setting size of heading for skills and hobbies */
-#Hobbies,#Skills{
+/*#Hobbies,#Skills{
     font-size: 220%;
     font-weight: bold;
     text-align:justify;
     margin-left: 1%;
 }
-
+*/
 
 /* Giving colour to horizontal line */
 .line{
@@ -166,8 +174,9 @@ a:hover{
 .description{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
-    font-size: 150%;
-    background-color: lightgoldenrodyellow;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(10, 81, 148);
     padding: 9px;
     width: 40%;
     border-radius: 10px;
@@ -175,15 +184,50 @@ a:hover{
     border-style: solid;
     margin-left: 30%;
     font : bold;
-    border-color: rgb(221, 189, 44);
+    border-color: rgb(3, 13, 104);
+}
+.projectsImages{
+    padding: 0px;
+    text-decoration: none;
+    align-content: center;
+    margin-left: 3%;
+    width: 70%;
+    margin-top: 1%;
 }
 
-
+.project{
+    padding: 6.67%;
+    background-image: url("../Photos/img3.jpg");
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    margin-top: 6.67%;
+}
+#projects{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        align-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: rgb(10, 81, 148);
+        padding: 9px;
+        width: 40%;
+        border-radius: 10px;
+        color:white;
+        border-width: 5px;
+        border-style: solid;
+        margin-left: 27%;
+        font : bold;
+        border-color: rgb(3, 13, 104);
+}
 /*Heading for About Me*/
 .About{
     font-size: 220%;
     font-weight: bold;
-    text-align:center;   
+    text-align:center;
+    color:rgb(181, 210, 235);
+   
 }
 
 
@@ -191,8 +235,9 @@ a:hover{
 .about{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
-    background-color: lightgoldenrodyellow;
-    font-size: 150%;
+    background-color: rgb(10, 81, 148);
+    font-size: 2rem;
+    color: white;
     padding: 0.6%;
     margin-bottom: 6.67%;
     border-radius: 10px;
@@ -202,7 +247,7 @@ a:hover{
     margin-left: 20%;
     margin-top: 6.67%;
     font : bold;
-    border-color: rgb(221, 189, 44);
+    border-color: rgb(3, 13, 104);
 }
 
 
@@ -210,11 +255,27 @@ a:hover{
 .contact{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font : bold;
-    font-size: 150%;
+    font-size: 1.5rem;
     margin-left: 3.33%;
 }
 
-
+#langs{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+    font-size: 2rem;
+    color:white;
+    background-color: rgb(10, 81, 148);
+    padding: 9px;
+    width: 20%;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 38%;
+    height: 200px;
+    font : bold;
+    border-color: rgb(3, 13, 104);
+}
 /* Wraps up the description of the skills section */
 .skills{
     padding: 6.67%;
@@ -227,13 +288,14 @@ a:hover{
     margin-top: 6.67%;
 }
 
-
 /* Images of programming languages I know */
 .skillsImages{
     padding: 0px;
     text-decoration: none;
-    margin-left: 2.67%;
-    width: 72px;
+    align-content: center;
+    margin-left: 40%;
+    width: 25%;
+    margin-top: -1%;
 }
 
 
@@ -245,7 +307,8 @@ a:hover{
 
 /*Heading for "Programming languages: "*/
 .Heading{
-    font-size: 120%;   
+    margin-left: 5%;
+    font-size: 1.5rem;   
 }
 
 

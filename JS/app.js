@@ -5,20 +5,17 @@ var sideNav = document.getElementById("sidenav");
 menu.style.height = "0%";
 sideNav.style.height = "0%";
 sideNav.style.fontSize = "0%";
-function Nav(){
-	if (menu.style.height === "0%"){
+function openNav(){
         menu.style.height = "100%";
         sideNav.style.height = "100%";
         sideNav.style.fontSize = "large";
-	}
-	else{
+}
+function closeNav(){
         sideNav.style.fontSize = "0%";
         menu.style.height = "0%";
         sideNav.style.height = "0%";
-	}
 }
 /**End of dropdown menu section for smaller screens */
-
 
 /** Start of Codeforces API call for live statistics */
 const url1 = 'https://codeforces.com/api/user.info?handles=Rituraj.rs';
