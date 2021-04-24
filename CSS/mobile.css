@@ -64,8 +64,8 @@ span.fade{
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 5.2%;
-    margin-top: -1.75%;
+    height: 35px;
+    margin-top: -10px;
     position: fixed;
     z-index: 1;
 }
@@ -84,8 +84,8 @@ a:hover{
 /* Menubar drop down icon for smaller screens */
 #menubar{
     float: right;
-    margin-right: 10%;
-    margin-top: 0%;
+    margin-right: 20px;
+    margin-top: 0px;
     color: rgb(54, 124, 185);
     cursor: pointer;
 }
