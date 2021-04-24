@@ -178,11 +178,11 @@ a:hover{
     color: white;
     background-color: rgb(10, 81, 148);
     padding: 9px;
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
-    margin-left: 30%;
+    margin-left: 25%;
     font : bold;
     border-color: rgb(3, 13, 104);
 }
