@@ -6,9 +6,16 @@ menu.style.height = "0%";
 sideNav.style.height = "0%";
 sideNav.style.fontSize = "0%";
 function openNav(){
+    if(menu.style.height === "0%" ){
         menu.style.height = "100%";
         sideNav.style.height = "100%";
         sideNav.style.fontSize = "large";
+    }
+    else{
+        sideNav.style.fontSize = "0%";
+        menu.style.height = "0%";
+        sideNav.style.height = "0%";
+    }
 }
 function closeNav(){
         sideNav.style.fontSize = "0%";
