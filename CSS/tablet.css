@@ -225,10 +225,10 @@ a:hover{
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
-    width: 60%;
+    width: 90%;
     color:white;
-    margin-left: 20%;
-    margin-top: 6.67%;
+    margin-left: 4%;
+    /* margin-top: 6.67%; */
     font : bold;
     border-color: rgb(3, 13, 104);
 }
@@ -328,10 +328,16 @@ a:hover{
 }
 
 .svg1{
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 50%;
+}
+.svg2{
     margin-left: 15%;
     margin-bottom: 5%;
     margin-top: 2%;
-    width: 60%;
+    width: 40%;
 }
 
 
