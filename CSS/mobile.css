@@ -134,6 +134,13 @@ a:hover{
     display: none;
 }
 
+.svg1{
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 60%;
+}
+
 
 /* Adding background colour to footer section */
 .foot{
