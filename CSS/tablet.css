@@ -122,7 +122,7 @@ a:hover{
 /* Adding background colour to footer section */
 .foot{
     color:white;
-    background-color:rgb(10, 98, 199) ;
+    background-color: rgb(3, 13, 104);
     padding: 1.33%;
     margin-top: 10%;
     flex-wrap: nowrap;
@@ -151,7 +151,7 @@ a:hover{
     align-content: center;
     font-size: 2rem;
     color:white;
-    background-color: rgb(10, 81, 148);
+    background-color: rgb(3, 35, 104);
     padding: 9px;
     width: 50%;
     border-radius: 10px;
@@ -160,7 +160,7 @@ a:hover{
     margin-left: 25%;
     height: 200px;
     font : bold;
-    border-color: rgb(3, 13, 104);
+    border-color: rgb(12, 8, 48);
 }
 /* Giving colour to horizontal line */
 .line{
@@ -175,7 +175,7 @@ a:hover{
     align-content: center;
     font-size: 1rem;
     color:white;
-    background-color: rgb(10, 81, 148);
+    background-color: rgb(3, 35, 104);
     padding: 9px;
     width: 60%;
     border-radius: 10px;
@@ -183,7 +183,7 @@ a:hover{
     border-style: solid;
     margin-left: 20%;
     font : bold;
-    border-color: rgb(3, 13, 104);
+    border-color: rgb(12, 8, 48);
 }
 
 
@@ -194,14 +194,14 @@ a:hover{
     font-size: 1rem;
     padding: 9px;
     color:white;
-    background-color: rgb(10, 81, 148);
+    background-color: rgb(3, 35, 104);
     width: 60%;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
     margin-left: 20%;
     font : bold;
-    border-color: rgb(3, 13, 104);
+    border-color: rgb(12, 8, 48);
 }
 
 
@@ -218,19 +218,19 @@ a:hover{
 .about{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-content: center;
-    background-color: rgb(10, 81, 148);
+    /* background-color: rgb(10, 81, 148); */
     font-size: 1rem;
     padding: 0.6%;
     margin-bottom: 6.67%;
-    border-radius: 10px;
+    /* border-radius: 10px;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid; */
     width: 90%;
     color:white;
     margin-left: 4%;
     /* margin-top: 6.67%; */
     font : bold;
-    border-color: rgb(3, 13, 104);
+    /* border-color: rgb(3, 13, 104); */
 }
 
 
@@ -309,7 +309,7 @@ a:hover{
         text-align: center;
         color:white;
         font-size: 1rem;
-        background-color: rgb(10, 81, 148);
+        background-color: rgb(3, 35, 104);
         padding: 9px;
         width: 40%;
         border-radius: 10px;
@@ -317,7 +317,7 @@ a:hover{
         border-style: solid;
         margin-left: 27%;
         font : bold;
-        border-color: rgb(3, 13, 104);
+        border-color: rgb(12, 8, 48);
 }
 /* Resizing "Get in touch" text */
 .contact{
