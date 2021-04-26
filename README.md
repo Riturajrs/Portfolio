@@ -1,16 +1,16 @@
 # LEAD
 This is my portfolio website :
 https://riturajseal2001.github.io/LEAD/
-Milestones achieved:
-✔️ About page
-✔️ Skills page
-✔️ Projects page
-✔️ Text animation added
-✔️ Page is responsive
-✔️ Live rating displayed using Codeforces API
-✔️ Automatic slideshow added
+Milestones achieved:<br /> 
+✔️ About page<br /> 
+✔️ Skills page<br /> 
+✔️ Projects page<br /> 
+✔️ Text animation added<br /> 
+✔️ Page is responsive<br /> 
+✔️ Live rating displayed using Codeforces API<br /> 
+✔️ Automatic slideshow added<br /> 
 
 # Technologies used:
-HTML
-CSS
-JavaScript
+HTML<br /> 
+CSS<br /> 
+JavaScript<br /> 
