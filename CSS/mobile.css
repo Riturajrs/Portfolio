@@ -19,16 +19,21 @@
 
 
 /* Resizing top name"Hi,I am Rituraj "*/
-#name{
+#name, #texts{
     margin-top: 8%;
     margin-left: 15%;
     color: rgb(1, 8, 27);
     font-size: 1.2rem;
     display: flex;
     width: 25%;
+    /* word-wrap:break-word; */
     font-weight: bold;
     text-align:justify;
     font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#texts{
+    font-size: 1rem;
 }
 
 span{

@@ -19,7 +19,7 @@
 
 
 /* Resizing top name"Hi,I am Rituraj "*/
-#name{
+#name, #texts{
     margin-top: 8%;
     margin-left: 20%;
     font-size: 2rem;
@@ -29,6 +29,10 @@
     font-weight: bold;
     text-align:justify;
     font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#texts{
+    font-size: 1.5rem;
 }
 
 span{
