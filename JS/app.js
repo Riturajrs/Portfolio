@@ -18,9 +18,9 @@ function openNav(){
     }
 }
 function closeNav(){
-        sideNav.style.fontSize = "0%";
-        menu.style.height = "0%";
-        sideNav.style.height = "0%";
+    sideNav.style.fontSize = "0%";
+    menu.style.height = "0%";
+    sideNav.style.height = "0%";
 }
 /**End of dropdown menu section for smaller screens */
 
@@ -31,7 +31,7 @@ async function getRating(){
     const response = await fetch(url1);
     const data = await response.json();
     if(data.status === "OK" ){
-        document.getElementById('rating').innerHTML = "Current rating : " + data.result[0].rating;
+        document.getElementById('rating').innerHTML = "Maximum rating : " + data.result[0].maxRating +"<br/><br/> Max rank: " + data.result[0].maxRank;
     }
 }
 async function getSubmission(){
