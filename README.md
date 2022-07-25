@@ -1,5 +1,5 @@
 # LEAD
-This is my portfolio website :<br /> https://riturajseal2001.github.io/Portfolio/<br /> 
+This is my portfolio website :<br /> https://Riturajrs.github.io/Portfolio/<br /> 
 Milestones achieved:<br /> 
 ✔️ About page<br /> 
 ✔️ Skills page<br /> 
